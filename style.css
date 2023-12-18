@@ -26,3 +26,15 @@ ul.list-disc > li {
 .navbar  .dropdown-menu[data-bs-popper] {
     left: -68px;
 }
+
+.container-custom {
+    max-width: 1100px;
+}
+
+.regis-instructions .box-img {
+    text-align: center;
+}
+
+.regis-instructions .box-img img {
+    max-width: 800px;
+}
