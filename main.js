@@ -14,7 +14,7 @@ function switchMode(el) {
 }
 
 $('#header-mb .nav-link').on('click', function () {
-    $('#hamburger').trigger('click');
+    $('#header-mb #hamburger').trigger('click');
 });
 
 
