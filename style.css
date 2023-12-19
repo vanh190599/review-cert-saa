@@ -27,7 +27,11 @@ ul.list-disc > li {
     font-size: 16px;
 }
 
-.navbar  .dropdown-menu[data-bs-popper] {
+.font-13 {
+    font-size: 13px;
+}
+
+.navbar .dropdown-menu[data-bs-popper] {
     left: -68px;
 }
 
@@ -47,6 +51,7 @@ ul.list-disc > li {
     cursor: pointer;
     padding: 0 5px;
 }
+
 .content > ol > li {
     margin-bottom: 3px;
 }

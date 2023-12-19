@@ -8,9 +8,13 @@ function switchMode(el) {
         theme.html('Light');
         return;
     }
+
     body.attr('data-bs-theme', 'dark');
     theme.html('Dark');
 }
 
+$('#header-mb .nav-link').on('click', function () {
+    $('#hamburger').trigger('click');
+});
 
 
