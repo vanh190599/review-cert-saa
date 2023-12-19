@@ -56,7 +56,11 @@ ul.list-disc > li {
     margin-bottom: 3px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
+    * {
+        font-size: 13px;
+    }
+
     #header-pc {
         display: none;
     }
@@ -74,4 +78,20 @@ ul.list-disc > li {
         padding-left: 6px !important;
         padding-right: 6px !important;
     }
+
+    .d-xs-none {
+        display: none;
+    }
+
+    /* note */
+    #note > ol {
+        padding-left: 18px;
+    }
+
+
+
+    #note > ol > li > ul {
+        padding-left: 0;
+    }
+
 }
