@@ -31,6 +31,10 @@ ul.list-disc > li {
     font-size: 13px;
 }
 
+.font-600 {
+    font-weight: 600;
+}
+
 .navbar .dropdown-menu[data-bs-popper] {
     left: -68px;
 }
@@ -54,6 +58,15 @@ ul.list-disc > li {
 
 .content > ol > li {
     margin-bottom: 3px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+code {
+    font-size: 14px;
+    font-family: inherit;
 }
 
 @media (max-width: 576px) {
@@ -88,10 +101,7 @@ ul.list-disc > li {
         padding-left: 18px;
     }
 
-
-
     #note > ol > li > ul {
         padding-left: 0;
     }
-
 }

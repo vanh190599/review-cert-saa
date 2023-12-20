@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,9 +13,9 @@
     <meta property="og:image:alt" content="anhnv github">
     <link rel="stylesheet" href="library/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="library/bootstrap-icons-1.11.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=0.0.1">
 </head>
-<body data-bs-theme="light">
+<body data-bs-theme="dark">
     <div class="wrapper">
         <header>
             <nav id="header-pc" class="navbar navbar-expand-sm bg-dark navbar-dark border-bottom fixed-top">
@@ -24,13 +24,13 @@
                         <li class="nav-item"><a class="nav-link" href="#introduce">Giới thiệu </a></li>
                         <li class="nav-item"><a class="nav-link" href="#note">Lưu ý</a></li>
                         <li class="nav-item"><a class="nav-link" href="#exam_content">Nội dung thi</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#review_doc">Review Tài liệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review_doc">Tài liệu</a></li>
                         <li class="nav-item"><a class="nav-link" href="#exam_register">Hướng dẫn đăng ký</a></li>
                         <li class="nav-item" style="padding-left: 20px">
                             <a class="nav-link">
                                 <div class="form-check form-switch">
                                     <input onclick="switchMode(this)" class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault">
-                                    <label id="theme_name" class="form-check-label" for="flexSwitchCheckDefault">Light</label>
+                                    <label id="theme_name" class="form-check-label" for="flexSwitchCheckDefault">Dark</label>
                                 </div>
                             </a>
                         </li>
@@ -38,7 +38,6 @@
                     <div class="dropdown">
                         <a href="https://www.facebook.com/NguyenVanAnh19051999/" data-bs-toggle="dropdown" target="_blank"
                            class="d-flex align-items-center text-decoration-none  dropdown-toggle">
-                            <span>anhnv &nbsp; </span>
                             <img src="images/profile/avt.jpg" class="rounded-circle" height="30" alt="">
                         </a>
                         <ul class="dropdown-menu">
@@ -70,7 +69,7 @@
                     </div>
                 </div>
             </nav>
-            <nav id="header-mb" class="d-none navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <nav id="header-mb" class="d-none navbar navbar-expand-sm bg-dark navbar-dark border-bottom fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><i class="bi bi-amazon"></i>&nbsp; <span class="font-13">Review cert SAA-C03</span></a>
                     <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -93,411 +92,435 @@
                 <div class="mt-5">
                     <figure class="text-center mt-5">
                         <br>
+                        <br>
                         <blockquote class="blockquote">
-                            <p>Review kì thi AWS Solution Architect SAA-C03</p>
+                            <p class="font-16">Review kì thi AWS Solution Architect SAA-C03</p>
                         </blockquote>
-                        <figcaption class="blockquote-footer">
+                        <figcaption class="blockquote-footer font-16">
                             Hướng dẫn đăng kí thi A-Z.
                         </figcaption>
                     </figure>
                     <div class="position-relative box-main" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
                         <!-- BEGIN: Giới thiệu -->
                         <div id="introduce" class="container-fluid p-3 pt-5">
-                            <h4 class="pt-3">I. Giới thiệu</h4>
-                            <div class="mt-3 p-2 pt-2 bg-secondary text-white rounded">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-4 d-xs-none align-self-center text-center">
-                                        <img src="images/profile/cert.png" alt="" style="height: 100%; max-height: 152px;">
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <span class="font-600">Giới thiệu</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="p-2 pt-2 bg-secondary text-white rounded">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-4 d-xs-none align-self-center text-center">
+                                                <img src="images/profile/cert.png" alt="" style="height: 100%; max-height: 152px;">
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-8 col-12">
+                                                <h5 class="mt-2">Tổng quan về kỳ thi</h5>
+                                                <ul class="list-disc mb-0">
+                                                    <li class="mb-2">Cấp độ: Associate</li>
+                                                    <li class="mb-2">Thời lượng: 130 minutes</li>
+                                                    <li class="mb-2">Chi phí: 150 USD</li>
+                                                    <li class="mb-2">Hình thức đề: 65 câu hỏi (1 đáp án hoặc nhiều đáp án đúng)</li>
+                                                    <li class="mb-2">Hình thức thi: Thi tại trung tâm khảo thí hoặc giám thị trực tuyến Pearson VUE.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-8 col-12">
-                                        <h5 class="mt-2">Tổng quan về kỳ thi</h5>
-                                        <ul class="list-disc mb-0">
-                                            <li>Cấp độ: Associate</li>
-                                            <li>Thời lượng: 130 minutes</li>
-                                            <li>Chi phí: 150 USD</li>
-                                            <li>Hình thức đề: 65 câu hỏi (1 đáp án hoặc nhiều đáp án đúng)</li>
-                                            <li>Hình thức thi: Thi tại trung tâm khảo thí hoặc giám thị trực tuyến Pearson VUE.</li>
-                                        </ul>
-                                    </div>
+                                    <ul class="mt-4">
+                                        <li><p>- Chia sẻ / review kỳ thi AWS Certified Solutions Architect -
+                                            Associate phiên bản SAA-03, 1 trong 3 kỳ thi của AWS cho cấp độ Associate :</p></li>
+                                        <li><p>- Mục đích: có kiến thức nền tảng để phục vụ cho việc đi xa hơn trên "hành trình trên mây"</p></li>
+                                        <li><p>- Hướng dẫn đăng kí thi hình thức offline từ A-Z</p></li>
+                                        <li><p>- Tại sao nên có chứng chỉ AWSSA-A?</p>
+                                            <ul>
+                                                <li><p>+ Kiến thức tổng quát về AWS, các best practices (worst practices) trong thiết kế hệ thống (không chỉ cho AWS)</p></li>
+                                                <li><p>+ Nhiều cơ hội việc làm hơn</p> </li>
+                                                <li><p>+ CV hấp dẫn hơn</p></li>
+                                            </ul>
+                                        <li>
+                                            <b>
+                                                <i class="bi bi-arrow-right-short"></i>
+                                                Anyway, chỉ có được, không có mất (ngoài thời gian) 😄
+                                            </b>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <ul class="mt-4">
-                                <li><p>- Chia sẻ / review kỳ thi AWS Certified Solutions Architect -
-                                    Associate phiên bản SAA-03, 1 trong 3 kỳ thi của AWS cho cấp độ Associate :</p></li>
-                                <li><p>- Mục đích: có kiến thức nền tảng để phục vụ cho việc đi xa hơn trên "hành trình trên mây"</p></li>
-                                <li><p>- Hướng dẫn đăng kí thi hình thức offline từ A-Z</p></li>
-                                <li><p>- Tại sao nên có chứng chỉ AWSSA-A?</p>
-                                    <ul>
-                                        <li><p>+ Kiến thức tổng quát về AWS, các best practices (worst practices) trong thiết kế hệ thống (không chỉ cho AWS)</p></li>
-                                        <li><p>+ Nhiều cơ hội việc làm hơn</p> </li>
-                                        <li><p>+ CV hấp dẫn hơn</p></li>
-                                    </ul>
-                                <li>
-                                    <b>
-                                        <i class="bi bi-arrow-right-short"></i>
-                                        Anyway, chỉ có được, không có mất (ngoài thời gian) 😄
-                                    </b>
-                                </li>
-                            </ul>
                         </div>
                         <!-- END: Giới thiệu -->
+
                         <!-- BEGIN: Lưu ý -->
                         <div id="note" class="container-fluid p-3 pt-5">
-                            <h4 class="pt-3 text-up">II. Lưu ý</h4>
-                            <ol>
-                                <li class="mb-4">
-                                    <b>Đăng kí</b>
-                                    <ul class="mt-2">
-                                        <li>- Xin thêm 30 phút làm bài trước khi đăng kí thi, do aws chưa hỗ trợ đề thi Tiếng Việt <br>
-                                            <p class="text-danger"><i class="bi bi-arrow-right"></i> Phải xin trước khi đăng kí thi, áp dụng cho tất cả các cert sau này!</p>
-                                        </li>
-                                        <li><p>- Lưu ý: có thể thay đổi lịch thi Free sau 24h đăng ký </p></li>
-                                        <li>- Tìm hiểu địa điểm thi:
-                                            <ul>
-                                                <li>+ Trung tâm khảo thí: <a target="_blank" href="https://ipmac.vn/">Pearson VUE</a> (ngoài ra còn nhiều lựa chọn khác)</li>
-                                                <li>+ Đ/c : Học Viện IPMac - Kim Anh Building, Lane#, 78 P. Duy Tân, Dịch Vọng Hậu, Cầu Giấy</li>
-                                                <li>+ Review: thủ tục nhanh chóng, sạch sẽ, yên tĩnh, mạng ổn, có giấy nháp, các bạn lễ tân xinh và nhiệt tình...</li>
+                            <div class="card mt-4">
+                                <div class="card-header"><span class="font-600">Lưu ý</span></div>
+                                <div class="card-body">
+                                    <ol>
+                                        <li class="mb-4">
+                                            <b>Đăng kí</b>
+                                            <ul class="mt-2">
+                                                <li>- Xin thêm 30 phút làm bài trước khi đăng kí thi, do aws chưa hỗ trợ đề thi Tiếng Việt <br>
+                                                    <p>
+                                                        <code><i class="bi bi-arrow-right"></i> Phải xin trước khi đăng kí thi, áp dụng cho tất cả các cert sau này!</code>
+                                                    </p>
+                                                </li>
+                                                <li><p>- Lưu ý: có thể thay đổi lịch thi Free sau 24h đăng ký </p></li>
+                                                <li>
+                                                    <p>- Tìm hiểu địa điểm thi:</p>
+                                                    <ul>
+                                                        <li><p>+ Trung tâm khảo thí: <a target="_blank" href="https://ipmac.vn/">Pearson VUE</a> (ngoài ra còn nhiều lựa chọn khác)</p></li>
+                                                        <li><p>+ Đ/c : Học Viện IPMac - Kim Anh Building, Lane#, 78 P. Duy Tân, Dịch Vọng Hậu, Cầu Giấy</p></li>
+                                                        <li><p>+ Review: thủ tục nhanh chóng, sạch sẽ, yên tĩnh, mạng ổn, có giấy nháp, các bạn lễ tân xinh và nhiệt tình...</p></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li class="mb-4">
-                                    <b>Khi đi thi</b>
-                                    <ul class="mt-2">
-                                        <li><p>- Mang theo: <span class="text-danger">CCCD</span> và <span class="text-danger">Bằng lái xe</span> (cả 2 cho chắc chắn)</p></li>
-                                        <li><p>- Không cần mang theo bút, giấy, nước,...</li>
-                                        <li><p>- Không được mang điện thoại/giấy bút/nước lavie... vào phòng thi: gửi đồ ở phòng gửi đồ</li>
-                                        <li><p>- Không nên sa đà vào 1 câu quá lâu</p></li>
+                                        <li class="mb-4">
+                                            <b>Khi đi thi</b>
+                                            <ul class="mt-2">
+                                                <li><p>- Mang theo: <code>CCCD</code> và <code>Bằng lái xe</code> (cả 2 cho chắc chắn)</p></li>
+                                                <li><p>- Không cần mang theo bút, giấy, nước,...</li>
+                                                <li><p>- Không được mang điện thoại/giấy bút/nước lavie... vào phòng thi: gửi đồ ở phòng gửi đồ</li>
+                                                <li><p>- Không nên sa đà vào 1 câu quá lâu</p></li>
+                                                <li>
+                                                    <p>- Khi làm bài: </p>
+                                                    <ul class="">
+                                                        <li>
+                                                            + KHÔNG thể bỏ qua nếu chưa chọn đáp án
+                                                            <p class="text-danger">
+                                                                <code>
+                                                                    <i class="bi bi-arrow-right"></i> Chọn bừa 1 đáp án và đánh dấu cờ, khi nào xong sẽ làm lại sau
+                                                                </code>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>+ 10 câu hỏi đầu tiên sẽ rất khó (thậm chí chưa gặp bao giờ): KHÔNG
+                                                                tập trung thời gian và sức lực vào 10 câu đầu tiên</p>
+                                                        </li>
+                                                        <li>
+                                                            <b>+ "Unscored content"</b>: đề có 15 câu hỏi khoai, có thể chưa bao
+                                                            giờ từng gặp, không tính điểm (có thể nằm rải rác)
+                                                            <p class="text-danger">
+                                                               <code>
+                                                                   <i class="bi bi-arrow-right"></i> Mục đích: gây xao nhãng, thăm dò, cải thiện đề các lần tới
+                                                               </code>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li>
-                                            <p>- Khi làm bài: </p>
-                                            <ul class="">
-                                                <li>
-                                                    + KHÔNG thể bỏ qua nếu chưa chọn đáp án
-                                                    <p class="text-danger"><i class="bi bi-arrow-right"></i> Chọn bừa 1
-                                                        đáp án và đánh dấu cờ, khi nào xong sẽ làm lại sau</p>
-                                                </li>
-                                                <li>
-                                                    <p>+ 10 câu hỏi đầu tiên sẽ rất khó (thậm chí chưa gặp bao giờ): KHÔNG
-                                                        tập trung thời gian và sức lực vào 10 câu đầu tiên</p>
-                                                </li>
-                                                <li>
-                                                    <b>+ "Unscored content"</b>: đề có 15 câu hỏi khoai, có thể chưa bao
-                                                    giờ từng gặp, không tính điểm (có thể nằm rải rác)
-                                                    <p class="text-danger">
-                                                        <i class="bi bi-arrow-right"></i> Mục đích: gây xao nhãng, thăm dò, cải thiện đề các lần tới</p>
-                                                </li>
+                                            <b>Pass chứng chỉ:</b>
+                                            <ul class="list-disc mt-2">
+                                                <li><p>Thời gian làm bài: 130 phút + 30 phút (bonus)</p></li>
+                                                <li><p>Điểm pass: <code>720</code> điểm (~72%)</p></li>
+                                                <li><p>Sẽ có điểm thi tối thiểu sau 4 tiếng (ngày trong tuần) hoặc 1 ngày (cuối tuần)</p></li>
+                                                <li><p>Sẽ có chứng chỉ trong 5 ngày làm việc</p></li>
                                             </ul>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <b>Pass chứng chỉ:</b>
-                                    <ul class="list-disc mt-2">
-                                        <li><p>Thời gian làm bài: 130 phút + 30 phút (bonus)</p></li>
-                                        <li><p>Điểm pass: 720 điểm (~72%)</p></li>
-                                        <li><p>Sẽ có điểm thi tối thiểu sau 4 tiếng (ngày trong tuần) hoặc 1 ngày (cuối tuần)</p></li>
-                                        <li><p>Sẽ có chứng chỉ trong 5 ngày làm việc</p></li>
-                                    </ul>
-                                </li>
-                            </ol>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                         <!-- END: Lưu ý -->
+
                         <!-- BEGIN: Nội dung thi -->
                         <div id="exam_content" class="container-fluid p-3 pt-5 content">
-                            <h4 class="pt-3">III. Nội dung</h4>
-                            <ol>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo">Compute group</span>
-                                    <div id="demo" class="collapse">
+                            <div class="card mt-4">
+                                <div class="card-header"><span class="font-600">Nội dung</span></div>
+                                <div class="card-body content">
+                                    <ol>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo">Compute group</span>
+                                            <div id="demo" class="collapse">
                                     <pre>
-    1.1. EC2
-        - what is EC2?
-        - volume/snapshot
-        - purchasing option
-            1. Free Tier
-            2. On-demand
-            3. Saving Plan
-            4. Spot instance
-            5. Resverved Instance
-            6. Decicated host
-            7. Capacity reservation
-        - EBS
-            + EBS snapshot
-            + EBS attack
-        - VPC (quan trọng nhất cho newbie)
-            + what is VPC?
-            + subnet
-            + internet gateway & nat gateway
-            + route table
-            + basion host
-            + NACL & Security Group
-            + Gateway VPC Endpoint & Interface VPC Endpoint
-            + VPC Connect:
-                - VPC Peering
-                - Private Link
-                - Transit Gateway
-                - RAM - Resouce Access Manager
-                - Network-to-Amazon connect
-                    + Direcet connect (DX)
-                    + Site-to-site VPN
-                    + Transit gateway
-                - CloudHub
-            + Security group:
-                Private IP
-                Public IP
-                Elastic IP
-            + IMAGE:
-                - AMI
-                - AMI catalog
-            + DNS hostname
-            + auto assign public ip
-            + hostname type
-        - Instance Type
-            1. General purpose
-            2. Compute optimize
-            3. Memory limited
-            S. Storage Optimize
-        - System Manager
-        ...
+1.1. EC2
+    - what is EC2?
+    - volume/snapshot
+    - purchasing option
+        1. Free Tier
+        2. On-demand
+        3. Saving Plan
+        4. Spot instance
+        5. Resverved Instance
+        6. Decicated host
+        7. Capacity reservation
+    - EBS
+        + EBS snapshot
+        + EBS attack
+    - VPC (quan trọng nhất cho newbie)
+        + what is VPC?
+        + subnet
+        + internet gateway & nat gateway
+        + route table
+        + basion host
+        + NACL & Security Group
+        + Gateway VPC Endpoint & Interface VPC Endpoint
+        + VPC Connect:
+            - VPC Peering
+            - Private Link
+            - Transit Gateway
+            - RAM - Resouce Access Manager
+            - Network-to-Amazon connect
+                + Direcet connect (DX)
+                + Site-to-site VPN
+                + Transit gateway
+            - CloudHub
+        + Security group:
+            Private IP
+            Public IP
+            Elastic IP
+        + IMAGE:
+            - AMI
+            - AMI catalog
+        + DNS hostname
+        + auto assign public ip
+        + hostname type
+    - Instance Type
+        1. General purpose
+        2. Compute optimize
+        3. Memory limited
+        S. Storage Optimize
+    - System Manager
+    ...
 
-    1.2. AWS Batch:
-        - Components
-            Jobs
-            Job Definitions
-            Job Queues
-            Compute Environments
-            Scheduler
-        - Pricing
+1.2. AWS Batch:
+    - Components
+        Jobs
+        Job Definitions
+        Job Queues
+        Compute Environments
+        Scheduler
+    - Pricing
 
-    1.3. AWS Elastic Beanstalk:
-        - Web Tier Environment
-        - Worker Environment
-        - Platform Supported
-            .Net (on Linux or Windows)
-            Docker
-            GlassFish
-            Go
-            Java
-            Node.js
-            python
-            Ruby
-            Tomcat
-        - Deployment Models
-            All at Once
-            Rolling
-            Rolling with additional batch
-            Immutable
-            Traffic splitting
-        - Pricing
+1.3. AWS Elastic Beanstalk:
+    - Web Tier Environment
+    - Worker Environment
+    - Platform Supported
+        .Net (on Linux or Windows)
+        Docker
+        GlassFish
+        Go
+        Java
+        Node.js
+        python
+        Ruby
+        Tomcat
+    - Deployment Models
+        All at Once
+        Rolling
+        Rolling with additional batch
+        Immutable
+        Traffic splitting
+    - Pricing
 
-    1.4. AWS Lamdba:
-        - lambda funtion
-        - lambda layer
-        - lambda event
-            support:
-                AWS DynamoDB
-                AWS SQS
-                AWS SNS
-                CloudWatch Event
-                API Gateway
-                AWS IoT
-                Kinesis
-                CloudWatch Logs
-        - Language Supported:
-            NodeJS
-            Go
-            Java
-            Python
-            Ruby
-        - Pricing
-        1.5. AWS Fargate
+1.4. AWS Lamdba:
+    - lambda funtion
+    - lambda layer
+    - lambda event
+        support:
+            AWS DynamoDB
+            AWS SQS
+            AWS SNS
+            CloudWatch Event
+            API Gateway
+            AWS IoT
+            Kinesis
+            CloudWatch Logs
+    - Language Supported:
+        NodeJS
+        Go
+        Java
+        Python
+        Ruby
+    - Pricing
+1.5. AWS Fargate
                             </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo2">Container</span>
-                                    <div id="demo2" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo2">Container</span>
+                                            <div id="demo2" class="collapse">
                                     <pre>
-    EKS
-    ECS
-    ECR
+EKS
+ECS
+ECR
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo3">Storage</span>
-                                    <div id="demo3" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo3">Storage</span>
+                                            <div id="demo3" class="collapse">
                                     <pre>
-    - Amazon S3
-    - AWS Backup
-    - Amazon EBS
-    - Amazon EFS
-    - Amazon FSx for Windows
-    - File Server
-    - Amazon FSx for Lustre
-    - Amazon S3 Glacier
-    - AWS Snowball
-    - AWS Storage Gateway
+- Amazon S3
+- AWS Backup
+- Amazon EBS
+- Amazon EFS
+- Amazon FSx for Windows
+- File Server
+- Amazon FSx for Lustre
+- Amazon S3 Glacier
+- AWS Snowball
+- AWS Storage Gateway
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo4">Database</span>
-                                    <div id="demo4" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo4">Database</span>
+                                            <div id="demo4" class="collapse">
                                     <pre>
-    Amazon Aurora
-    Amazon DocumentDB
-    Amazon DynamoDB
-    Amazon ElastiCache
-    Amazon Keyspaces
-    Amazon Neptune
-    Amazon RDS
-    Amazon Redshift
+- Amazon Aurora
+- Amazon DocumentDB
+- Amazon DynamoDB
+- Amazon ElastiCache
+- Amazon Keyspaces
+- Amazon Neptune
+- Amazon RDS
+- Amazon Redshift
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo5">Security, Identity, & Compliance</span>
-                                    <div id="demo5" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo5">Security, Identity, & Compliance</span>
+                                            <div id="demo5" class="collapse">
                                     <pre>
-    AWS IAM
-    Amazon Cognito
-    AWS Directory Service
-    Amazon RAM
-    AWS Secrets Managers
-    AWS Security Hub
-    WAF
-    Network Firewall & Firewall Manager
-    Fabric Adapter
-    ACM
+- AWS IAM
+- Amazon Cognito
+- AWS Directory Service
+- Amazon RAM
+- AWS Secrets Managers
+- AWS Security Hub
+- WAF
+- Network Firewall & Firewall Manager
+- Fabric Adapter
+- ACM
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo6">Cryptography & PKI</span>
-                                    <div id="demo6" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo6">Cryptography & PKI</span>
+                                            <div id="demo6" class="collapse">
                                    <pre>
-    AWS KMS
-    AWS Certificate Manager
+- AWS KMS
+- AWS Certificate Manager
                                    </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo7">Management & Governance</span>
-                                    <div id="demo7" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo7">Management & Governance</span>
+                                            <div id="demo7" class="collapse">
                                     <pre>
-    AWS Auto Scaling
-		Terminologies related to AWS Autoscaling Groups:
-			Launch Configuration vs Launch Template
-			Auto Scaling Lifecycle Hooks:
-		Monitoring
-			Health Check
-			CloudWatch Events:
-			CloudWatch Metrics
-			Notification Service
+AWS Auto Scaling
+    Terminologies related to AWS Autoscaling Groups:
+        Launch Configuration vs Launch Template
+        Auto Scaling Lifecycle Hooks:
+    Monitoring
+        Health Check
+        CloudWatch Events:
+        CloudWatch Metrics
+        Notification Service
 
-	AWS CloudFormation
-	AWS CloudTrail
-	Amazon CloudWatch
-	AWS config
-	AWS License Manager
-	AWS Organizations
-	AWS Systems Manager
+AWS CloudFormation
+AWS CloudTrail
+Amazon CloudWatch
+AWS config
+AWS License Manager
+AWS Organizations
+AWS Systems Manager
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo8">Developer Tools => ít hỏi</span>
-                                    <div id="demo8" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo8">Developer Tools => ít hỏi</span>
+                                            <div id="demo8" class="collapse">
                                     <pre>
-    AWS CodeBuild
-	AWS CodeCommit
-	AWS CodeDeploy
-	AWS x-Ray
+AWS CodeBuild
+AWS CodeCommit
+AWS CodeDeploy
+AWS x-Ray
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo9">Migration & Transfer</span>
-                                    <div id="demo9" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo9">Migration & Transfer</span>
+                                            <div id="demo9" class="collapse">
                                     <pre>
-    AWS DMS
+AWS DMS
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo10">Networking & Content Delivery</span>
-                                    <div id="demo10" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo10">Networking & Content Delivery</span>
+                                            <div id="demo10" class="collapse">
                                     <pre>
-    Amazon API Gateway
-	AWS Cloud Map
-	Amazon CloudFront
-	Amazon Global Accelerator
-	AWS PrivateLink
-	AWS Transit Gateway
-	AWS Direct Connect
-	AWS ELB
-	Amazon Route 53
-	Amazon vpc
+- Amazon API Gateway
+- AWS Cloud Map
+- Amazon CloudFront
+- Amazon Global Accelerator
+- AWS PrivateLink
+- AWS Transit Gateway
+- AWS Direct Connect
+- AWS ELB
+- Amazon Route 53
+- Amazon vpc (quan trọng)
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo11">Front End Web & Mobile</span>
-                                    <div id="demo11" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo11">Front End Web & Mobile</span>
+                                            <div id="demo11" class="collapse">
                                     <pre>
-    AWS AppSync
+- AWS AppSync
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo12">Application Integration</span>
-                                    <div id="demo12" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo12">Application Integration</span>
+                                            <div id="demo12" class="collapse">
                                     <pre>
-    Amazon EventBridge
-	Amazon SNS
-	Amazon SQS
-	AWS Step Functions
-	Amazon SWF
+- Amazon EventBridge
+- Amazon SNS
+- Amazon SQS
+- AWS Step Functions
+- Amazon SWF
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo13">Billing & Cost Management</span>
-                                    <div id="demo13" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo13">Billing & Cost Management</span>
+                                            <div id="demo13" class="collapse">
                                     <pre>
-    AWS Cost Explorer
-	AWS Budgets
-	AWS Cost & Usage
-	Reports
-	Reserved Instance
-	Reporting
+- AWS Cost Explorer
+- AWS Budgets
+- AWS Cost & Usage
+- Reports
+- Reserved Instance
+- Reporting
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo14">Monitoring</span>
-                                    <div id="demo14" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo14">Monitoring</span>
+                                            <div id="demo14" class="collapse">
                                     <pre>
-    AWS Personal Health
-    Dashboard
+- AWS Personal Health
+- Dashboard
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo15">AWS Management Console</span>
-                                    <div id="demo15" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo15">AWS Management Console</span>
+                                            <div id="demo15" class="collapse">
                                     <pre>
-    AWS Management
-    Console
+- AWS Management
+- Console
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo16">Miscellaneous</span>
-                                    <div id="demo16" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo16">Miscellaneous</span>
+                                            <div id="demo16" class="collapse">
                                     <pre>
-    # Các nhóm dịch vụ Analytic
+# Các nhóm dịch vụ Analytic:
     1. AWS Kinesis
         Kinesis Data Stream
         Kinesis Data Firehorse
@@ -509,7 +532,7 @@
     5. AWS QuickSight
     6. AWS Opensearch
 
-    # Các nhóm dịch vụ ML:
+# Các nhóm dịch vụ ML:
         1. AWS Comprehend
         2. AWS Polly
         3. AWS Textract
@@ -518,15 +541,15 @@
         6. AWS Transcribe
         7. AWS SageMaker
 
-    # Các nhóm dịch vụ Tăng tốc:
+# Các nhóm dịch vụ Tăng tốc:
         1. Global Accelerator
         2. S3 Accelerator
                                     </pre>
-                                    </div>
-                                </li>
-                                <li>
-                                    <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo17">Disaster Recovery</span>
-                                    <div id="demo17" class="collapse">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="text-bg-secondary" data-bs-toggle="collapse" data-bs-target="#demo17">Disaster Recovery</span>
+                                            <div id="demo17" class="collapse">
                                     <pre>
 - RTO & RPO
 - 4 chiến lược phục hồi chủ đạo
@@ -535,77 +558,77 @@
     Warm Standby ($$$)
     Hot standby: multi-ste active / active ($$$$)
                                     </pre>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="mt-2 mb-2 p-3 pt-4 bg-black text-white rounded">
+                                        <h5># Summary:</h5>
+                                        <p class="mt-3">- Câu hỏi phân bố theo 4 domains</p>
+                                        <ol>
+                                            <li><p>Secure Architectures <code>(30%)</code></p></li>
+                                            <li><p>Resilient Architectures <code>(26%)</code></p></li>
+                                            <li><p>High-Performing Architectures <code>(24%)</code></p></li>
+                                            <li><p>Cost-Optimized Architectures <code>(20%)</code></p></li>
+                                        </ol>
                                     </div>
-                                </li>
-                            </ol>
-                            <div class="container mt-2">
-                                <div class="mt-4 p-2 pt-4 bg-black text-white rounded">
-                                    <h5># Summary:</h5>
-                                    <p>- Kiến thức khá rộng, tìm phần nào nên clear phần đó</p>
-                                    <span>- Câu hỏi phân bố theo 4 domains:</span>
-                                    <ul class="list-disc">
-                                        <li>Secure Architectures <code>(30%)</code></li>
-                                        <li>Resilient Architectures <code>(26%)</code></li>
-                                        <li>High-Performing Architectures <code>(24%)</code></li>
-                                        <li>Cost-Optimized Architectures <code>(20%)</code></li>
-                                    </ul>
-
                                 </div>
                             </div>
                         </div>
                         <!-- END: Nội dung thi -->
+
                         <!-- BEGIN: Review Tài liệu -->
                         <div id="review_doc" class="container-fluid p-3 pt-5">
-                            <h4 class="pt-3">IV. Review tài liệu <span class="text-muted font-16">(Ý kiến cá nhân)</span></h4>
-                            <ol>
-                                <li class="mb-3">
-                                    <a href="https://docs.aws.amazon.com/" target="_blank">AWS Documentation</a> <span class="text-muted"><i>(Tài liệu chuẩn)</i></span>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="https://codestar.vn/product/aws-co-ban/" target="_blank">Codestar Academy</a>
-                                    <ul>
-                                        <li>- Service core, nhưng chưa đủ để thi</li>
-                                        <li>- Có các bài Lab và hướng dẫn khá hay</li>
-                                        <li>- Nội dung khá chung chung, phải tự tìm hiểu thêm nhiều</li>
-                                        <li>- Tài liệu bày các chỉ mục chưa clear</li>
-                                        <li>- Các mentor sẽ chia sẻ kinh nghiệm thực tế khi tham gia lớp online</li>
-                                        <li class="text-danger mt-2"><i class="bi bi-arrow-right"> Nên tự tìm hiểu trước, hứng thú thì có thể tham gia khóa học Follow bộ tài liệu này</i></li>
-                                    </ul>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/" target="_blank">Udemy Ultimate AWS Certified Solutions Architect Associate SAA-C03</a>
-                                    <ul>
-                                        <li>- Tổng thời gian: </li>
-                                        <li>- Trả phí để học, có thể mua trên các group chia sẻ tài liệu với giá ~200k</li>
-                                        <li>- Có bài Quiz để test</li>
-                                        <li>- Ngắn ngọn, mô tả dễ hiểu</li>
-                                        <li>- Cá nhân thì chỉ mới xem đc 20%, nếu đã quen rồi thì chỉ xem những video cần thiết</li>
-                                        <li class="text-danger mt-2"><i><i class="bi bi-arrow-right"></i> Khóa này rất ngon</i></li>
-                                    </ul>
-                                </li>
-                                <li class="mb-3">
-                                    Các group trên Facebook
-                                    <ul>
-                                        <li>- <a href="https://www.facebook.com/groups/200998063799003/" target="_blank">AWS and DevOps Learning Community</a></li>
-                                        <li>- <a href="https://www.facebook.com/groups/1390800988028013" target="_blank">AWS Vietnam: Do & Share</a></li>
-                                    </ul>
-                                </li>
-                                <li class="mb-3">
-                                    Bộ đề: <a href="https://www.examtopics.com/" target="_blank">examtopics</a>
-                                    <ul>
-                                        <li>- được cập nhật liên tục</li>
-                                        <li>- lưu ý đáp án khác với lượng most voted</li>
-                                    </ul>
-                                </li>
-                                <li class="mb-3">
-                                    Thi thử: <a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/13266/aws-certified-solutions-architect-associate-official-practice-question-set-saa-c03-english?saa=sec&sec=prep" target="_blank">Amazon</a>
-                                </li>
-                            </ol>
+                            <div class="card mt-4">
+                                <div class="card-header"><span class="font-600">Tài liệu</span></div>
+                                <div class="card-body">
+                                    <ol>
+                                        <li class="mb-3">
+                                            <p>Tài liệu của Amazon: <a href="https://docs.aws.amazon.com/" target="_blank">AWS Documentation</a> <span class="text-muted"><i></i></span></p>
+                                        </li>
+                                        <li class="mb-3">
+                                            <p>
+                                                Khóa học trên Udemy
+                                                <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/" target="_blank">
+                                                    Udemy Ultimate AWS Certified Solutions Architect Associate SAA-C03</a>
+                                            </p>
+                                            <ul>
+                                                <li><p>- Tổng thời gian: khoảng 30 giờ </p> </li>
+                                                <li><p>- Rate khá cao, nhiều người tham gia</p></li>
+                                                <li><p>- Ngắn ngọn, mô tả dễ hiểu</p></li>
+                                                <li><p>- Bài kiểm tra thực hành đầy đủ kèm theo phần giải thích!</p></li>
+                                                <li><p>- Tất cả hơn 800 slide đều có sẵn dưới dạng PDF có thể tải xuống</p></li>
+                                                <li><p>- Trả phí để học, có thể tham khảo mua trên các group chia sẻ tài liệu với giá rẻ</p></li>
+                                                <li class="text-danger mt-2"><i class="bi bi-arrow-right"><code> Khóa này ngon!</code></i></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-3">
+                                            Minmap cá nhân (hoàn thành 60%): <a href="https://www.mindmeister.com/app/map/2991647100?t=9upKOMDUCS" target="_blank">www.mindmeister.com</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <p>Bộ đề được cộng đồng tổng hợp: <a href="https://www.examtopics.com/" target="_blank">www.examtopics.com</a></p>
+                                            <ul>
+                                                <li><p>- Được cập nhật liên tục</p></li>
+                                                <li><p>- Lưu ý lượt vote đáp án của cộng đồng</p></li>
+                                                <li><p>- Thường có giải thích chi tiết, dẫn chứng cụ thể</p></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-3">
+                                            Thi thử: <a href="https://explore.skillbuilder.aws/learn/course/external/view/elearning/13266/aws-certified-solutions-architect-associate-official-practice-question-set-saa-c03-english?saa=sec&sec=prep" target="_blank">
+                                            AWS Skill Builder</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                         <!-- END: Review Tài liệu -->
+
                         <!-- BEGIN: Hướng dẫn đăng kí thi -->
                         <div id="exam_register" class="container-fluid p-3 pt-5">
-                            <h4 class="pt-3">V. Hướng dẫn đăng kí thi A-Z</h4>
+                            <div class="mt-3">
+                                <span class="font-600">Hướng dẫn đăng kí thi A-Z</span>
+                            </div>
                             <div class="card mt-3">
                                 <div class="card-header">
                                     Step 1: Tạo tài khoản trên hệ thống AWS Training (nếu chưa có)
@@ -613,12 +636,12 @@
                                 <div class="card-body">
                                     <p class="mb-3">- Truy cập: <a href="https://www.aws.training/" target="_blank">https://www.aws.training/</a> </p>
                                     <p class="mb-3">- <b>Lưu ý</b>: Lưu ý tài khoản AWS training không phải là tài khoản AWS mà là tài khoản Amazon</p>
-                                    <div class="box-img"><img class="w-100 mb-2" src="images/register/step1.png" alt=""></div>
+                                    <div class="box-img img-thumbnail"><img class="img-thumbnail w-100 mb-2" src="images/register/step1.png" alt=""></div>
                                     <p class="mt-3 mb-3">
                                         - Sau khi tạo được tài khoản và đăng nhập vào màn hình AWS.training, nhấn vào mục
                                         <b>Certification</b>.
                                     </p>
-                                    <div class="box-img"><img class="w-100 mb-2" src="images/register/step1.1.png" alt=""></div>
+                                    <div class="box-img"><img class="img-thumbnail w-100 mb-2" src="images/register/step1.1.png" alt=""></div>
                                     <p class="mb-3">
                                         - Tại màn Certificate, nhấn vào nút <b>Go to Your Account</b>
                                     </p>
@@ -645,15 +668,15 @@
                                 </div>
                                 <div class="card-body">
                                     <p class="mb-3">- Khi đã hoàn thành Create New AWS Certification Account, màn hình sẽ hiện ra như sau. Tại
-                                        đây, chúng ta tiến hành đăng kí thông tin cá nhân chi tiết tại tab <b>My profile</b></p>
-                                    <div class="box-img"><img class="w-100 mb-3" src="images/register/step2.png" alt=""></div>
+                                        đây, tiến hành đăng kí thông tin cá nhân chi tiết tại tab <b>My profile</b></p>
+                                    <div class="box-img"><img class="w-100 mb-3 img-thumbnail" src="images/register/step2.png" alt=""></div>
                                     <p class="mb-3">
                                         - Nhấn vào <b>Demographics</b> hoặc <b>My Profile</b> để điền thông tin. Tại đây, có 2 page cần hoàn thành:
                                     </p>
                                     <p><b>1) Identification</b></p>
-                                    <div class="box-img"><img class="w-100 mb-3" src="images/register/step2.1.png" alt=""></div>
+                                    <div class="box-img"><img class="w-100 img-thumbnail mb-3" src="images/register/step2.1.png" alt=""></div>
                                     <p><b>2) Setting:</b></p>
-                                    <div class="box-img"><img class="w-100 mb-3" src="images/register/step2.3.png" alt=""></div>
+                                    <div class="box-img"><img class="w-100 img-thumbnail mb-3" src="images/register/step2.3.png" alt=""></div>
                                 </div>
                             </div>
                             <div class="card mt-4">
@@ -665,10 +688,12 @@
                                         - Tham khảo: <a href="https://www.linkedin.com/pulse/30-minute-extension-your-aws-certification-exam-garcia-lozano/">https://www.linkedin.com/pulse/30-minute-extension-your-aws-certification-exam-garcia-lozano/</a>
                                     </p>
                                     <p>Click <b>Request Exam Accommodation</b></p>
-                                    <div class="box-img"><img src="images/register/step3.1.png" class="w-100 mb-3" alt=""></div>
-                                    <div class="box-img"><img src="images/register/step3.2.png" class="w-100 mb-3" alt=""></div>
-                                    <div class="box-img"><img src="images/register/step3.3.png" class="w-100 mb-3" alt=""></div>
-                                    <div class="box-img"><img src="images/register/step3.4.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step3.1.png" class="w-100 img-thumbnail mb-3" alt=""></div>
+                                    <p>- Tiếp tục click vào nút <b>Request Accommodation</b></p>
+                                    <div class="box-img"><img src="images/register/step3.2.png" class="w-100 img-thumbnail mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step3.3.png" class="w-100 img-thumbnail mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step3.4.png" class="w-100 img-thumbnail mb-3" alt=""></div>
+                                    <p>Như vậy là đã xin thêm thời gian thành công!</p>
                                 </div>
                             </div>
                             <div class="card mt-4">
@@ -677,27 +702,27 @@
                                 </div>
                                 <div class="card-body">
                                     <p>1. Tại màn Dashboard, click <b>Register for an Exam</b></p>
-                                    <div class="box-img"><img src="images/register/step4.1.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.1.png" class="w-100 mb-3 img-thumbnail" alt=""></div>
                                     <p>2. Chọn option AWS <b>Certified Solutions Architect - Associate</b></p>
-                                    <div class="box-img"><img src="images/register/step4.2.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.2.png" class="w-100 mb-3 img-thumbnail" alt=""></div>
                                     <p>3. Chọn option AWS <b>In person at test center</b> sau đó chọn <b>Your photo ID</b></p>
-                                    <div class="box-img"><img src="images/register/step4.3%20(2).png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.3%20(2).png" class="w-100 img-thumbnail mb-3" alt=""></div>
                                     <p>4. Chọn <b>English</b></p>
-                                    <div class="box-img"><img src="images/register/step4.4.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.4.png" class="w-100 img-thumbnail mb-3" alt=""></div>
                                     <p>5. Bước này chọn địa điểm thi, kiểm tra xem địa điểm nào tiện thì đăng kí nhé, ở đây mình chọn
                                         <span class="text-primary">IPMAC Information TTechnology Joint Stock Company</span></p>
-                                    <div class="box-img"><img src="images/register/step4.5.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.5.png" class="w-100 img-thumbnail mb-3" alt=""></div>
                                     <p>6. Bước này chọn lịch thi</p>
-                                    <div class="box-img"><img src="images/register/step4.6.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.6.png" class="w-100 img-thumbnail mb-3" alt=""></div>
                                     <p>7. Thực hiện thanh toán, nếu có voucher thì dùng ở đây nhé</p>
-                                    <div class="box-img"><img src="images/register/step4.7.png" class="w-100 mb-3" alt=""></div>
+                                    <div class="box-img"><img src="images/register/step4.7.png" class="w-100 img-thumbnail mb-3" alt=""></div>
                                     <p>8. Khi thanh toán xong sẽ nhận được mail thông báo lịch thi, vậy là xong rồi!</p>
-                                    <div class="box-img"><img src="images/register/step4.8.png" class="w-100 mb-3" alt=""><div class="box-img"></div>
+                                    <div class="box-img"><img src="images/register/step4.8.png" class="w-100 mb-3 img-thumbnail" alt=""></div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <!-- END: Hướng dẫn đăng kí thi -->
+
                     </div>
                 </div>
             </div>
@@ -711,4 +736,4 @@
 <script src="library/jquery-3.7.1/jquery-3.7.1.min.js"></script>
 <!--<script src="library/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>-->
 <script src="library/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
+<script src="main.js?v=0.0.1"></script>
