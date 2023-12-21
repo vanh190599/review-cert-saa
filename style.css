@@ -69,6 +69,8 @@ code {
     font-family: inherit;
 }
 
+
+
 @media (max-width: 576px) {
     * {
         font-size: 13px;
