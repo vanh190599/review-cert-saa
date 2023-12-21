@@ -6,6 +6,10 @@
     padding: 0;
     margin: 0;
 }
+pre {
+    font-size: 14px;
+    /*font-family: inherit;*/
+}
 
 ul > li {
     list-style: none;
@@ -48,16 +52,12 @@ ul.list-disc > li {
 }
 
 #exam_register .box-img img {
-    max-width: 800px;
+    max-width: 960px;
 }
 
 .content > ol > li > span {
     cursor: pointer;
     padding: 0 5px;
-}
-
-.content > ol > li {
-    margin-bottom: 3px;
 }
 
 .dropdown-toggle::after {
@@ -69,7 +69,25 @@ code {
     font-family: inherit;
 }
 
+.list-group-item-content > li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
 
+[data-bs-theme="dark"] .btn-light-custom {
+    background: transparent;
+    color: var(--bs-body-color);
+    transition: 0.2s;
+    border-color: #7c7c7c;
+}
+
+[data-bs-theme="dark"] .btn-light-custom:hover {
+    background: #616161;
+}
+
+[data-bs-theme="light"] .btn-light-custom {
+    background: #eeeeee;
+}
 
 @media (max-width: 576px) {
     * {
